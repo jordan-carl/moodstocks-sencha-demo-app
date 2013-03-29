@@ -17,11 +17,11 @@
 
         <!-- replace the mock cordova-2.3.0.js with the real cordova javascript file -->
         <copy file="${basedir}/cordova-2.3.0-ios.js"
-            tofile="${basedir}/ios/www/cordova-2.3.0.js"
+            tofile="${basedir}/ios/Demo/www/cordova-2.3.0.js"
             overwrite="true" />
 
         <copy file="${basedir}/cordova-2.3.0-android.js"
-            tofile="${basedir}/android/assets/www/cordova-2.3.0.js"
+            tofile="${basedir}/android/Demo/assets/www/cordova-2.3.0.js"
             overwrite="true" />
     </target>
     <!--
