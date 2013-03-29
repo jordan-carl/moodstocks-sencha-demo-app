@@ -1,0 +1,4 @@
+*.DS_Store
+build/MyApp/package/
+build/MyApp/SenchaDemo/www/
+resources/sass/.sass-cache/
