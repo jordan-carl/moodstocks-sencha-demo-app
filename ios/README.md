@@ -50,7 +50,9 @@ At last you need to install PhoneGap:
 
 3. Setup the Moodstocks SDK: please refer to this [step-by-step tutorial](https://developers.moodstocks.com/doc/tuto-ios/1).
 
-4. Open Xcode and drag drop `MoodstocksPlugin.h`, `MoodstocksPlugin.m` and other native resources files(`MSScannerController.{h,m}`, `MSHandler.{h,m}`) to `Plugins` folder in your project.
+4. Open Xcode and the plugin repo, drag drop `MoodstocksPlugin.h`, `MoodstocksPlugin.m` and other native resources files(`MSScannerController.{h,m}`, `MSHandler.{h,m}`) to `Plugins` folder in your project.
+
+4. Copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder.
 
 4. Configure your API key & secret in `build/MyApp/MoodstocksPlugin.m`:
 
