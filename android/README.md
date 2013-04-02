@@ -10,7 +10,7 @@ From the overlay, you can either redirect to a product page (which dismisses the
 
 ## Prerequisites
 
-* An Android development environment.
+* Android development environment.
 * A Moodstocks [developer account](https://developers.moodstocks.com/register).
 
 Then you need to set up Sencha Touch development environment:
@@ -45,7 +45,7 @@ At last you need to get PhoneGap:
 2. Import the demo project `your/repo/demo-android` into your IDE.
 3. Set up the Moodstocks SDK: please refere to this [step-by-step tutorial](https://developers.moodstocks.com/doc/tuto-android/1).
 
-4. Open plugin repo and copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder.
+4. Open [Moodstocks PhoneGap plugin for Android](https://github.com/Moodstocks/moodstocks-phonegap-plugin/android) repo and copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder (the same level as `app.js`).
 
 4. Drag and drop `android/src` folder to your project.
 

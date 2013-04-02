@@ -10,7 +10,7 @@ From the overlay, you can either redirect to a product page (which dismisses the
 
 ## Prerequisites
 
-* An iOS development environment.
+* iOS development environment.
 * A Moodstocks [developer account](https://developers.moodstocks.com/register).
 
 Then you need to set up Sencha Touch development environment:
@@ -41,6 +41,7 @@ At last you need to install PhoneGap:
       * MSHandler.{h,m}
 
 1. Git clone this demo.
+
 2. Open the `SenchaDemo` Xcode project:
 
     ```console
@@ -50,31 +51,31 @@ At last you need to install PhoneGap:
 
 3. Setup the Moodstocks SDK: please refer to this [step-by-step tutorial](https://developers.moodstocks.com/doc/tuto-ios/1).
 
-4. Open Xcode and the plugin repo, drag drop `MoodstocksPlugin.h`, `MoodstocksPlugin.m` and other native resources files(`MSScannerController.{h,m}`, `MSHandler.{h,m}`) to `Plugins` folder in your project.
+4. Open [Moodstocks PhoneGap plugin for iOS](https://github.com/Moodstocks/moodstocks-phonegap-plugin/ios) repo and copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder (the same level as `app.js`).
 
-4. Copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder.
+5. Open Xcode and drag drop `MoodstocksPlugin.h`, `MoodstocksPlugin.m` and other native resources files(`MSScannerController.{h,m}`, `MSHandler.{h,m}`) to `Plugins` folder in your project.
 
-4. Configure your API key & secret in `build/MyApp/MoodstocksPlugin.m`:
+6. Configure your API key & secret in `build/MyApp/MoodstocksPlugin.m`:
 
     ```objective-c
     #define MS_API_KEY @"ApIkEy"
     #define MS_API_SEC @"ApIsEcReT"
     ```
 
-5. We use Sencha cmd 3.1.0 to build our app, check first to see if you need to update the sencha configuration.
+7. We use Sencha cmd 3.1.0 to build our app, check first to see if you need to update the sencha configuration.
 
   ```console
   cd /path/to/your/repo
   sencha app upgrade -noframework
   ```
 
-6. Build the Sencha app.
+8. Build the Sencha app.
 
     ```console
     sencha app build package
     ```
 
-7. Switch to Xcode and click `Run` to launch the demo on your device.
+9. Switch to Xcode and click `Run` to launch the demo on your device.
 
 ## Create your own project from scratch
 
