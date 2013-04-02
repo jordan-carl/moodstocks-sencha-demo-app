@@ -5,9 +5,3 @@
 Demo.xcodeproj/project.xcworkspace/xcuserdata/
 Demo.xcodeproj/xcuserdata/
 CordovaLib/CordovaLib.xcodeproj/xcuserdata/
-
-# for dev usage
-
-Obj-C/
-libmoodstocks-sdk.a
-moodstocks_sdk.h
