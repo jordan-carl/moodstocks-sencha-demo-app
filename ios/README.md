@@ -170,7 +170,6 @@ In order to get started quickly, here is the demo's structure to help you better
             MoodstocksPlugin.open(openSuccess, openFailure);
         },
         ```
-
     * Sync the scanner cache everytime the scanner panel is activated. The sync method is called inside `controller\Scanner.js`, triggered by the `activate` event of scanner panel:
 
         ```javascript
@@ -179,7 +178,6 @@ In order to get started quickly, here is the demo's structure to help you better
             MoodstocksPlugin.sync(null, syncInProgress, syncFinished, syncFailure);
         },
         ```
-
     * All the overlay elements are created and added to the view port while the scanner panel is initialized. The initialization is located in `view\Scanner\Panel.js`:
 
         ```javascript
@@ -194,7 +192,6 @@ In order to get started quickly, here is the demo's structure to help you better
 
         //...
         ```
-
     * When the scanner is launched, we need to hide the scanner panel & main tab bar in order to have a transparent overlay. Correspondingly, we need to recovery them when the scanner is dismissed. This toggle is done in `controller\Scanner.js`. The `hidePanel` action is triggered by the **tap** event of scan button, the `showPanel` action is called in **scanDismiss** callback of Moodstocks PhoneGap plugin:
 
         ```javascript
@@ -208,7 +205,6 @@ In order to get started quickly, here is the demo's structure to help you better
             this.getMainTabbar().hide();
         }
         ```
-
     * Once an object is recognized, the result is displayed on overlay and the scan session is paused. Now you can :
         1. Click on the `Redirect to Product` button to dismiss the scanner and be redirected to a product view, what we give as an example is to push a product view from the scanner container.
         2. Click on the `Open a Popup` button to fire a popup inside the scanner, what we give as an example is a thumbnail view.

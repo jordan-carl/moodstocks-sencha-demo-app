@@ -134,31 +134,29 @@ In order to get started quickly, here is the demo's structure to help you better
     ```
 
 5. Open SenchaDemo in Eclipse and add Moodstocks plugin's native files to your project.
-
-  * Create a package called `com.moodstocks.phonegap.plugin` and copy these files into it:
+    * Create a package called `com.moodstocks.phonegap.plugin` and copy these files into it:
       * MoodstocksPlugin.java
       * MoodstocksWebView.java
       * MoodstocksScanActivity.java
-  * Replace your main activity class with our `Demo.java`. It overrides several functions of `DroidGap`.
-
-  * Add related resources file of `MoodstocksScanActivity.java` into your project
+    * Replace your main activity class with our `Demo.java`. It overrides several functions of `DroidGap`.
+    * Add related resources file of `MoodstocksScanActivity.java` into your project
       * Copy `scan.xml` into `res/layout`, this is the overlay's layout file
       * Add this line in `res/values/strings.xml`
 
-      ```xml
-      <string name="scan_name">MoodstocksScanActivity</string>
-      ```
+        ```xml
+        <string name="scan_name">MoodstocksScanActivity</string>
+        ```
 
       * Add activity declaration into your `AndroidManifest.xml`
 
-      ```xml
-      <activity
-          android:name="com.moodstocks.phonegap.plugin.MoodstocksScanActivity"
-          android:label="scan_name"
-          android:screenOrientation="portrait"
-          android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-      </activity>
-      ```
+        ```xml
+        <activity
+            android:name="com.moodstocks.phonegap.plugin.MoodstocksScanActivity"
+            android:label="scan_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        ```
 
 6. Register Moodstocks plugin in Cordova's plugin list. Open `res/xml/config.xml` and add this line of code:
 
