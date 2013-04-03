@@ -146,7 +146,6 @@ In order to get started quickly, here is the demo's structure to help you better
         ```xml
         <string name="scan_name">MoodstocksScanActivity</string>
         ```
-
       * Add activity declaration into your `AndroidManifest.xml`
 
         ```xml
