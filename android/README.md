@@ -181,7 +181,6 @@ In order to get started quickly, here is the demo's structure to help you better
     ```
 
 8. Integrate Moodstocks Scanner into your app.
-
     * Open the scanner while the application is launched. The open method is called inside `app.js`:
 
         ```javascript
