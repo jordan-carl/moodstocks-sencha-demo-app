@@ -30,4 +30,26 @@
 		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/com/moodstocks/phonegap/demo/Demo.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/plugin/android/Demo.java</locationURI>
+		</link>
+		<link>
+			<name>src/com/moodstocks/phonegap/plugin/MoodstocksPlugin.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/plugin/android/MoodstocksPlugin.java</locationURI>
+		</link>
+		<link>
+			<name>src/com/moodstocks/phonegap/plugin/MoodstocksScanActivity.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/plugin/android/MoodstocksScanActivity.java</locationURI>
+		</link>
+		<link>
+			<name>src/com/moodstocks/phonegap/plugin/MoodstocksWebView.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/plugin/android/MoodstocksWebView.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
