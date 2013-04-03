@@ -31,32 +31,24 @@ At last you need to get PhoneGap:
 
 ## Test the demo
 
-0. Get [Moodstocks PhoneGap plugin for Android](https://github.com/Moodstocks/moodstocks-phonegap-plugin/android)
+[Moodstocks PhoneGap plugin](https://github.com/Moodstocks/moodstocks-phonegap-plugin/) has been configured as a submodule of this repo.
 
-  > NOTE: Our PhoneGap plugin is composed by
-    * MoodstocksPlugin.js
-    * MoodstocksPlugin.java
-    * MoodstocksScanActivity.java
-    * MoodstocksWebView.java: it extends the `CordovaWebView` in order to perform properly in our scanner.
-    * Demo.java: it overrides a part of `DroidGap` in order to implement our web view overlay logic.
-    * Resources related to these 2 activity
+1. Git clone this repo.
 
-1. Git clone this demo.
-2. Import the demo project `your/repo/demo-android` into your IDE.
-3. Set up the Moodstocks SDK: please refere to this [step-by-step tutorial](https://developers.moodstocks.com/doc/tuto-android/1).
+2. Initialize and update submodule - `plugin`
 
-4. Open [Moodstocks PhoneGap plugin for Android](https://github.com/Moodstocks/moodstocks-phonegap-plugin/android) repo and copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder (the same level as `app.js`).
+  ```console
+  $ git submodule init
+  $ git submodule update
+  ```
 
-4. Drag and drop `android/src` folder to your project.
+3. Open the `plugin` folder and copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder (the same level as `app.js`).
 
-  * Following 3 files will be added to `com.moodstocks.phonegap.plugin`:
-      * MoodstocksPlugin.java
-      * MoodstocksScanActivity.java
-      * MoodstocksOverlay.java
+4. Import the demo project `your/repo/android/Demo` into your IDE.
 
-  * `Demo.java` inside `com.moodstocks.phonegap.demo` will be updated.
+5. Set up the Moodstocks SDK: please refere to this [step-by-step tutorial](https://developers.moodstocks.com/doc/tuto-android/1).
 
-4. Configure your API key & secret in `MoodstocksPlugin.java` which can be found inside the package `com.moodstocks.phonegap.plugin`
+6. Configure your API key & secret in `MoodstocksPlugin.java` which can be found inside the package `com.moodstocks.phonegap.plugin`
 
   ```
   //--------------------------------
@@ -66,20 +58,20 @@ At last you need to get PhoneGap:
   private static final String API_SECRET = "";
   ```
 
-5. We use Sencha cmd 3.1.0 to build our app, check first to see if you need to update the sencha configuration.
+7. We use Sencha cmd 3.1.0 to build our app, check first to see if you need to update the sencha configuration.
 
   ```console
   cd /path/to/your/repo
   sencha app upgrade -noframework
   ```
 
-6. Build the Sencha app.
+8. Build the Sencha app.
 
   ```console
   sencha app build package
   ```
 
-7. Swith to Eclipse and launch the application on your device
+9. Swith to Eclipse and launch the application on your device
 
 ## Create your own project from scratch
 
@@ -102,6 +94,16 @@ In order to get started quickly, here is the demo's structure to help you better
         └── Scanner
             ├── Container.js -> the container to hold the scanner panel
             └── Panel.js -> the panel contains scan options checkboxs, status bar & scan button
+
+0. Get [Moodstocks PhoneGap plugin for Android](https://github.com/Moodstocks/moodstocks-phonegap-plugin/android)
+
+  > NOTE: Our PhoneGap plugin is composed by
+    * MoodstocksPlugin.js
+    * MoodstocksPlugin.java
+    * MoodstocksScanActivity.java
+    * MoodstocksWebView.java: it extends the `CordovaWebView` in order to perform properly in our scanner.
+    * Demo.java: it overrides a part of `DroidGap` in order to implement our web view overlay logic.
+    * Resources related to these 2 activity
 
 1. Create a Sencha Touch app.
 

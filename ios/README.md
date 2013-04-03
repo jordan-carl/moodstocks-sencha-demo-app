@@ -31,29 +31,27 @@ At last you need to install PhoneGap:
 
 ## Test the demo
 
-0. Get [Moodstocks PhoneGap plugin for iOS](https://github.com/Moodstocks/moodstocks-phonegap-plugin/ios)
+[Moodstocks PhoneGap plugin](https://github.com/Moodstocks/moodstocks-phonegap-plugin/) has been configured as a submodule of this repo.
 
-  > NOTE: Our PhoneGap plugin is composed by
-    * MoodstocksPlugin.js
-    * MoodstocksPlugin.{h,m}
-    * Other native resources:
-      * MSScannerController.{h,m}
-      * MSHandler.{h,m}
+1. Git clone this repo.
 
-1. Git clone this demo.
+2. Initialize and update submodule - `plugin`
 
-2. Open the `SenchaDemo` Xcode project:
+  ```console
+  $ git submodule init
+  $ git submodule update
+  ```
+
+3. Open the `plugin` folder and copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder (the same level as `app.js`).
+
+4. Open the `Demo` Xcode project:
 
     ```console
     cd /path/to/your/repo
-    open demo-ios/SenchaDemo.xcodeproj
+    open ios/Demo/Demo.xcodeproj
     ```
 
-3. Setup the Moodstocks SDK: please refer to this [step-by-step tutorial](https://developers.moodstocks.com/doc/tuto-ios/1).
-
-4. Open [Moodstocks PhoneGap plugin for iOS](https://github.com/Moodstocks/moodstocks-phonegap-plugin/ios) repo and copy `MoodstocksPlugin.js` to the root of the Sencha Touch demo folder (the same level as `app.js`).
-
-5. Open Xcode and drag drop `MoodstocksPlugin.h`, `MoodstocksPlugin.m` and other native resources files(`MSScannerController.{h,m}`, `MSHandler.{h,m}`) to `Plugins` folder in your project.
+5. Setup the Moodstocks SDK: please refer to this [step-by-step tutorial](https://developers.moodstocks.com/doc/tuto-ios/1).
 
 6. Configure your API key & secret in `build/MyApp/MoodstocksPlugin.m`:
 
@@ -98,6 +96,15 @@ In order to get started quickly, here is the demo's structure to help you better
         └── Scanner
             ├── Container.js -> the container to hold the scanner panel
             └── Panel.js -> the panel contains scan options checkboxs, status bar & scan button
+
+0. Get [Moodstocks PhoneGap plugin for iOS](https://github.com/Moodstocks/moodstocks-phonegap-plugin/ios)
+
+  > NOTE: Our PhoneGap plugin is composed by
+    * MoodstocksPlugin.js
+    * MoodstocksPlugin.{h,m}
+    * Other native resources:
+      * MSScannerController.{h,m}
+      * MSHandler.{h,m}
 
 1. Create a Sencha Touch app.
 
