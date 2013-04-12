@@ -88,10 +88,10 @@ In order to get started quickly, here is the demo's structure to help you better
         ├── Home.js -> Home panel with a short description
         ├── Main.js -> Main tab panel which contains the Home tab and Scanner tab
         ├── Overlay
-        │   ├── Container.js -> the container to hold the result & control
-        │   ├── Control.js -> contains buttons to control further action
-        │   ├── Result.js -> the badge to display scan result
-        │   └── Thumbnail.js -> the thumbnail contains the product view
+        │   ├── Container.js -> Container that wrap all the overlay subviews {Content, Action, Popup}
+        │   ├── Action.js -> The subview of action buttons
+        │   ├── Content.js -> The subview displays the scanned object name & format
+        │   └── Popup.js -> The subview for popup information
         ├── Product.js
         └── Scanner
             ├── Container.js -> the container to hold the scanner panel
