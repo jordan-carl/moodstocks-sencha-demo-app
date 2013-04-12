@@ -1,7 +1,7 @@
-Ext.define('MyApp.view.Overlay.Result', {
+Ext.define('MyApp.view.Overlay.Content', {
     extend: 'Ext.Container',
-    xtype: 'overlayResult',
-    id: 'overlayResult',
+    xtype: 'overlayContent',
+    id: 'overlayContent',
 
     config: {
         top: 0,

@@ -30,10 +30,10 @@ Ext.application({
     views: [
         'Home',
         'Main',
+        'Overlay.Action',
         'Overlay.Container',
-        'Overlay.Control',
-        'Overlay.Result',
-        'Overlay.Thumbnail',
+        'Overlay.Content',
+        'Overlay.Popup',
         'Product',
         'Scanner.Container',
         'Scanner.Panel'

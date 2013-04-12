@@ -19,13 +19,13 @@ Ext.define('MyApp.controller.Scanner', {
             'scannerPanel button[ui=action]': {
                 tap: 'onScanButtonTap'
             },
-            'overlayControl button[action=redirect]': {
+            'overlayAction button[action=redirect]': {
                 tap: 'redirectToProduct'
             },
-            'overlayControl button[action=popup]': {
+            'overlayAction button[action=popup]': {
                 tap: 'popupProductThumbnail'
             },
-            'overlayThumbnail button[action=back]': {
+            'overlayPopup button[action=back]': {
                 tap: 'backToScanResult'
             },
             overlayContainer: {
@@ -125,22 +125,22 @@ Ext.define('MyApp.controller.Scanner', {
     },
 
     popupProductThumbnail: function() {
-        Ext.getCmp('overlayResult').hide();
-        Ext.getCmp('overlayControl').hide();
-        Ext.getCmp('overlayThumbnail').show();
+        Ext.getCmp('overlayContent').hide();
+        Ext.getCmp('overlayAction').hide();
+        Ext.getCmp('overlayPopup').show();
     },
 
     backToScanResult: function() {
-        Ext.getCmp('overlayResult').show();
-        Ext.getCmp('overlayControl').show();
-        Ext.getCmp('overlayThumbnail').hide();
+        Ext.getCmp('overlayContent').show();
+        Ext.getCmp('overlayAction').show();
+        Ext.getCmp('overlayPopup').hide();
     },
 
     hideOverlay: function() {
 
-        Ext.getCmp('overlayResult').show();
-        Ext.getCmp('overlayControl').show();
-        Ext.getCmp('overlayThumbnail').hide();
+        Ext.getCmp('overlayContent').show();
+        Ext.getCmp('overlayAction').show();
+        Ext.getCmp('overlayPopup').hide();
 
         MoodstocksPlugin.resume(function(){console.log("scanner resume")}, null);
     }

@@ -1,7 +1,7 @@
-Ext.define('MyApp.view.Overlay.Thumbnail', {
+Ext.define('MyApp.view.Overlay.Popup', {
     extend: 'Ext.Container',
-    xtype: 'overlayThumbnail',
-    id: 'overlayThumbnail',
+    xtype: 'overlayPopup',
+    id: 'overlayPopup',
 
     config: {
         centered: true,

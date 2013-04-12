@@ -17,13 +17,13 @@ Ext.define('MyApp.view.Overlay.Container', {
 
         items: [
             {
-                xtype:'overlayResult'
+                xtype:'overlayContent'
             },
             {
-                xtype:'overlayControl'
+                xtype:'overlayAction'
             },
             {
-                xtype:'overlayThumbnail'
+                xtype:'overlayPopup'
             }
         ]
     }

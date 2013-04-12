@@ -1,7 +1,7 @@
-Ext.define('MyApp.view.Overlay.Control', {
+Ext.define('MyApp.view.Overlay.Action', {
     extend: 'Ext.Container',
-    xtype: 'overlayControl',
-    id: 'overlayControl',
+    xtype: 'overlayAction',
+    id: 'overlayAction',
 
     config: {
         top: 180,
